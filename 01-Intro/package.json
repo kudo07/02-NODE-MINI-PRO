@@ -1,0 +1,16 @@
+{
+  "name": "01-intro",
+  "version": "1.0.0",
+  "description": "intro to node js its important to learn the backend technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "axios": "^1.6.0"
+  }
+}

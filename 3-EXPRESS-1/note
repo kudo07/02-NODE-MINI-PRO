@@ -1,0 +1,17 @@
+framework==> Syntax/Rules/Guideline/Style 
+it is a certain way of acjieving something that
+
+1) How to create a multiple routes
+A)Static routes
+b)Dynamic routes
+C)Status codes  
+
+A)Parameters(params)
+B)Query params
+http://localhost:3000/index.html?name=example@gmail.com
+c)request body
+
+req is have all type of data it can hold anything which have username property , it is object
+which can hold anything
+in the params it have username property 
+this is how we can access the username property 
