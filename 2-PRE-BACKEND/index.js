@@ -11,8 +11,11 @@ const x = require('fs');
 // avoid sync function  are block the event loop
 // readfile, open
 const { readFileSync } = require('fs');
-console.log(readFileSync('./NOTE', { encoding: 'utf-8' }));
+console.log(readFileSync('./NOTE'));
 // <Buffer 54 48 45 20 4a 53 20 57 48 49 43 48 20 52 55 4e 53 20 49 4e 20 54 48 45 20 42 41 43 4b 45 4e 44 20 57 48 49 43 48 20 4f 52 49 47 49 4e 41
 // 4c 4c 59 20 ... 83 more bytes>
 // S INTO THE BYTES AND READ THE DATA
+console.log(readFileSync('./NOTE', { encoding: 'utf-8' }));
+// JS INTO THE BYTES AND READ THE DATA
+//
 x.writeFileSync('./written.txt', 'this is made by this file');

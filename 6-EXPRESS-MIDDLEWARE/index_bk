@@ -1,0 +1,26 @@
+import express from 'express';
+const app = express();
+// this is the middleware fuinction
+// express will execute this
+// next once we dont he middleware logics next function call in
+// the main logic pass controll to the controller
+const logger = (req, res, next) => {
+  console.log(new Date(), req.method, req.url);
+  // once u done with the login u have to call the next function
+
+  next();
+  // pass the function to the next function
+};
+// executed before every req handler
+app.use(logger);
+// before the executing of the get method
+app.get('/', (req, res) => {
+  //   logger(req); to prevent the duplicasy in the every line we remove by
+  res.send('this is the first rout');
+});
+app.get('/about', (req, res) => {
+  res.send('this is the second rout');
+});
+app.listen(3000, (req, res) => {
+  console.log(`port listen: http//localhost//3000`);
+});

@@ -1,5 +1,29 @@
 [
   {
+    "id": 1,
+    "name": "Varun Bhatt",
+    "designation": "Software Engineer",
+    "gender": "male"
+  },
+  {
+    "id": 2,
+    "name": "Sonia Yadav",
+    "designation": "Human Resource",
+    "gender": "female"
+  },
+  {
+    "name": "Kanika Verma",
+    "designation": "CTO",
+    "gender": "female",
+    "id": 3
+  },
+  {
+    "name": "Mohit Khanna",
+    "designation": "CEO",
+    "gender": "male",
+    "id": 5
+  },
+  {
     "name": "Mohit Khanna",
     "designation": "CEO",
     "gender": "male",
@@ -72,21 +96,9 @@
     "id": 17
   },
   {
-    "name": "Rohit Sharma",
+    "name": "Mohit Khanna",
     "designation": "CEO",
     "gender": "male",
     "id": 18
-  },
-  {
-    "name": "Kanika Khanna",
-    "designation": "CA",
-    "gender": "female",
-    "id": 19
-  },
-  {
-    "name": "tohit Khanna",
-    "designation": "CEO",
-    "gender": "male",
-    "id": 20
   }
 ]
