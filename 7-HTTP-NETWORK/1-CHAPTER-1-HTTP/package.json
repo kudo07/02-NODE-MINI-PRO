@@ -1,0 +1,12 @@
+{
+  "name": "1-chapter-1-http",
+  "version": "1.0.0",
+  "main": "code.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
