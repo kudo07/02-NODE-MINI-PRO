@@ -1,0 +1,117 @@
+// console.log(a);
+// var a = 2;
+// console.log(a);
+// пример с let
+var x1; //?assignment
+
+// x1 = 10;
+// function myFunction() {
+//   let x = 1;
+
+//   var x1 = 20;
+//   if (true) {
+//     let x = 2;
+//     var x1 = 30;
+//     console.log(x, x1); // 2 30
+//   }
+//   console.log(x, x1); // 1 30
+// }
+
+// myFunction();
+// console.log(x1); //?10
+// // пример с const
+// const PI = 3.14;
+// // PI = 3.14159; // TypeError: Assignment to constant variable.
+
+// let globalVar = 'i am global';
+// function exampleFunction() {
+//   let loacalVar = 'i am local';
+//   console.log(loacalVar, globalVar);
+//   var a = 10;
+// }
+// exampleFunction();
+// console.log(globalVar, a);
+// console.log(a);
+// var a;
+// a = 10;
+
+if (true) {
+  var a = 0;
+  var a = 10;
+  let blockLet = 'let in block';
+  let blockConst = 'const in block';
+}
+console.log(blockConst, blockLet);
+var greetUser = 'good morning!';
+var greetUser = 'good afternoon!';
+console.log(greetUser); // good afternoon!
+
+let greetUser = 'good morning!';
+let greetUser = 'good afternoon!';
+console.log(greetUser);
+// SyntaxError: Identifier 'greetUser' has already been declared
+
+var greetUser = 'good morning!';
+greetUser = 'good afternoon!';
+console.log(greetUser); // good afternoon!
+
+let greetUser = 'good morning!';
+greetUser = 'good afternoon!';
+console.log(greetUser); // good afternoon!
+
+var varA = 'I am in global scope';
+let letA = 'hey, I am too in global scope';
+
+function printData() {
+  console.log(varA);
+  console.log(letA);
+}
+printData();
+// I am in global scope
+// hey, I am too in global scope
+
+function printData() {
+  var favoriteBook = 'the happiness hypothesis';
+  console.log(favoriteBook);
+}
+printData(); // the happiness hypothesis
+console.log(favoriteBook); // ReferenceError: favouriteBook is not defined
+
+function printSomething() {
+  let x = 10;
+  if (true) {
+    let y = 20;
+    console.log(x); // 10
+    console.log(y); // 20
+  }
+  console.log(x); // 10
+  console.log(y); // ReferenceError: y is not defined
+}
+printSomething();
+
+console.log(varA);
+print();
+
+var varA = 'hello shipper!';
+function print() {
+  console.log('hello builder!');
+}
+// undefined
+// hello builder!
+
+// console.log(letA);
+// let letA = 'hello shipper!';
+//ReferenceError : Cannot access 'letA' before initialization
+
+// console.log(letA); // I am in Temporal Dead Zone
+
+// let letA = 'hello shipper!'
+
+// if(true){
+//     console.log('hello batman!');
+//     console.log('hello spiderman!');
+//     console.log('hello superman!');
+
+//     console.log(shaktiman); // I am too in Temporal Dead Zone
+//     let shaktiman = 'hello shaktiman';
+// }
